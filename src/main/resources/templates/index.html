@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tp4</title>
+	<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header data-th-replace="~{fragments/header::Header}">
+	</header>
+	<nav data-th-replace="~{fragments/header::Nav}">
+	</nav>
+	<div class="container" >
+		<div class="row">
+			<div class="col-lg-8">
+				<div data-th-replace="~{fragments/header::Contenido}">
+				</div>
+			</div>		
+			
+			<div class="col-lg-4">
+				<aside data-th-replace="~{fragments/header::Aside}">
+				</aside>
+			</div>
+		</div>
+	</div>
+	<footer data-th-replace="~{fragments/header::Footer}">
+	</footer>
+
+	<script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+
+
+</html>
