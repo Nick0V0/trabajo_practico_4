@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+
+<title>Formulario Alumnos</title>
+</head>
+<body>
+	<header data-th-replace="~{fragments/header::Header}"> </header>
+	<nav data-th-replace="~{fragments/header::Nav}"></nav>
+	<br>
+	<div class="container">
+		<h1>FORMULARIO ALUMNO</h1>
+		<form data-th-object="${nuevoAlumno}"
+			data-th-action="${band}?@{/modificarAlumno}:@{/guardarAlumno}"
+			method="post">
+
+			<div class="col-sm-6">
+				<label for="dni" class="form-label">DNI</label> <input
+					type="text" class="form-control" id="dni"
+					data-th-field="*{dni}" data-th-readonly=${band} required>
+			</div>
+
+			<div class="col-sm-6">
+				<label for="nombre" class="form-label">Nombre</label> <input
+					type="text" class="form-control" id="nombre"
+					data-th-field="*{nombre}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="apellido" class="form-label">Apellido</label> <input
+					type="text" class="form-control" id="apellido"
+					data-th-field="*{apellido}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="email" class="form-label">Email</label> <input
+					type="email" class="form-control" id="email"
+					data-th-field="*{email}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="telefono" class="form-label">Teléfono</label> <input
+					type="text" class="form-control" id="telefono"
+					data-th-field="*{telefono}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label> <input
+					type="date" class="form-control" id="fechaNacimiento"
+					data-th-field="*{fechaNacimiento}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="domicilio" class="form-label">Domicilio</label> <input
+					type="text" class="form-control" id="domicilio"
+					data-th-field="*{domicilio}" required>
+			</div>
+			
+			<div class="col-sm-6">
+				<label for="libretaUniversitaria" class="form-label">Libreta Universitaria</label> <input
+					type="text" class="form-control" id="libretaUniversitaria"
+					data-th-field="*{libretaUniversitaria}" required>
+			</div>
+			<br>
+			<div>
+				<button type="submit" class="btn btn-primary">Guardar
+					Alumno</button>
+				<a class="btn btn-secondary" href="/alumnos">Ver listado de
+					Alumnos</a>
+			</div>
+		</form>
+	</div>
+	<br>
+	<br>
+	<footer data-th-replace="~{fragments/footer::Footer}"> </footer>
+	<script
+		data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
