@@ -1,138 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
-	<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}">
-<body>
-
-
-<header data-th-fragment="Header" class="navbar bg-body-tertiary bg-info-subtle">
-	<div class="container-fluid">
-		<a class="navbar-brand text-info-emphasis fw-bolder" href="https://www.fi.unju.edu.ar">
-			<img src="/images/logo.png" alt="icono" width="150" class="d-inline-block align-text-middle">
-			Facultad de Ingenieria UNJu - 52 Años Educando
-		</a>
-	</div>
-</header>
+<meta charset="UTF-8">
+<title>Header</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+</head>
 
 
 
-<nav data-th-fragment="Nav" class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Noticias</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Carreras
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>	
-          </ul>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Contacto
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>	
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<aside data-th-fragment="Aside" class="list-group " >
-  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-  Biblioteca
-  <img src="/images/Calendario.png" alt="Calendario" width="%100" >
-  </a>
-  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-  Calendario académico
-  <img src="/images/Biblioteca.png" alt="Biblioteca" width="320" >
-  </a>
-</aside>
-
-<div data-th-fragment="Contenido" class="row">
-    <section id="facultad">
-        <h3>Facultad de Ingeniería UNJu - Jujuy</h3>
-        <p>La Facultad de Ingeniería de la Universidad Nacional de Jujuy (UNJu) es una institución dedicada a la formación académica en diversas disciplinas de ingeniería. Fundada en [año de fundación], se destaca por [características destacadas]. Ofrece programas de estudio de grado y posgrado, así como también realiza investigaciones en áreas clave de la ingeniería.</p>
-    </section>
-
-    <section id="noticias-recientes">
-		<h3>Noticias Recientes</h3>
-    <article>
-        <h4>Charla sobre Computación de Alto Rendimiento y Biometría</h4>
-        <p>Se llevó a cabo una charla dirigida a estudiantes avanzados sobre estos temas interesantes.</p>
-    </article>
-    <article>
-        <h4>Convocatoria “Beca UNISA”</h4>
-        <p>La Università degli Studi di Salerno ofrece becas en maestrías en ingeniería para el próximo año académico.</p>
-    </article>
-    <article>
-        <h4>Encuentros de Talleres de Capacitación en Autocuidado y Emociones</h4>
-        <p>No docentes de la FI UNJu participaron en estos encuentros.</p>
-    </article>
-    <article>
-        <h4>Curso de Posgrado “Fisicoquímica”</h4>
-        <p>Ofrecido como parte de la Especialización en Enseñanza de las Ciencias Exactas y Naturales.</p>
-    </article>
-    <article>
-        <h4>Reunión Informativa IngeniaVoz</h4>
-        <p>Convocatoria para estudiantes del CADI-CAEDI 2024.</p>
-    </article>
-    <article>
-        <h4>52° Aniversario de la Facultad de Ingeniería</h4>
-        <p>Celebración del aniversario de la Facultad de Ingeniería.</p>
-    </article>
-    </section>
-</div>
-
-<footer data-th-fragment="Footer" class="bg-dark text-white p-1">
-	<div class="d-flex text-white container">
-		<div class="col-lg-4">
-			<ul class="list-group list-group-flush " style="list-style-type: none;">
-				<li>
-					<h4 >Redes Sociales</h4>
-					<a href="https://facebook.com/facultad">Facebook</a><br>
-					<a href="https://twitter.com/facultad">Twitter</a><br>
-	                <a href="https://linkedin.com/company/facultad>">Instagram</a><br>					
-				</li>
-			</ul>
+	<header data-th-fragment="Header"
+		class="navbar bg-body-tertiary bg-info-subtle">
+		<div class="container-fluid">
+			<a class="navbar-brand text-info-emphasis fw-bolder"
+				href="https://www.fi.unju.edu.ar"> <img src="/images/logo.png"
+				alt="icono" width="150" class="d-inline-block align-text-middle">
+				Facultad de Ingenieria UNJu - 52 Años Educando
+			</a>
 		</div>
-		<div class="col-lg-4 container text-center">
-			<ul class="list-group list-group-flush" style="list-style-type: none;">
-				<li>
-					<h4>FACULTAD DE INGENIERIA - UNJu</h4>
-					<p>Direccion: Ítalo Palanca Nº 10</p>
-					<p>Telefono: 0388 422-1580</p>
-					<p>Email: info@fi.unju.edu.ar</p>
-				</li>
-			</ul>
+	</header>
+
+
+
+	<nav data-th-fragment="Nav"
+		class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Inicio</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#">Acerca
+							de</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Noticias</a>
+					</li>
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Carreras </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else
+									here</a></li>
+						</ul></li>
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Contacto </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else
+									here</a></li>
+						</ul></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-			<p class="mt-3 d-flex justify-content-center">&copy; 2024 Facultad de Ingeniería</p>
-  </footer>
+	</nav>
 
 
-	<script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+
+
+	<script
+		data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+
 </body>
 </html>

@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Tp4</title>
-	<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Tp4</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
 </head>
 
 <body>
-	<header data-th-replace="~{fragments/header::Header}">
-	</header>
-	<nav data-th-replace="~{fragments/header::Nav}">
-	</nav>
-	<div class="container" >
+	<header data-th-replace="~{fragments/header::Header}"> </header>
+	<nav data-th-replace="~{fragments/header::Nav}"></nav>
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
-				<div data-th-replace="~{fragments/header::Contenido}">
+				<div class="row">
+					<section id="facultad">
+						<h3>Facultad de Ingeniería UNJu - Jujuy</h3>
+						<p>La Facultad de Ingeniería de la Universidad Nacional de
+							Jujuy (UNJu) es una institución dedicada a la formación académica
+							en diversas disciplinas de ingeniería. Fundada en [año de
+							fundación], se destaca por [características destacadas]. Ofrece
+							programas de estudio de grado y posgrado, así como también
+							realiza investigaciones en áreas clave de la ingeniería.</p>
+					</section>
+
+					<section id="noticias-recientes">
+						<h3>Noticias Recientes</h3>
+						<article>
+							<h4>Charla sobre Computación de Alto Rendimiento y Biometría</h4>
+							<p>Se llevó a cabo una charla dirigida a estudiantes
+								avanzados sobre estos temas interesantes.</p>
+						</article>
+						<article>
+							<h4>Convocatoria “Beca UNISA”</h4>
+							<p>La Università degli Studi di Salerno ofrece becas en
+								maestrías en ingeniería para el próximo año académico.</p>
+						</article>
+						<article>
+							<h4>Encuentros de Talleres de Capacitación en Autocuidado y
+								Emociones</h4>
+							<p>No docentes de la FI UNJu participaron en estos
+								encuentros.</p>
+						</article>
+						<article>
+							<h4>Curso de Posgrado “Fisicoquímica”</h4>
+							<p>Ofrecido como parte de la Especialización en Enseñanza de
+								las Ciencias Exactas y Naturales.</p>
+						</article>
+						<article>
+							<h4>Reunión Informativa IngeniaVoz</h4>
+							<p>Convocatoria para estudiantes del CADI-CAEDI 2024.</p>
+						</article>
+						<article>
+							<h4>52° Aniversario de la Facultad de Ingeniería</h4>
+							<p>Celebración del aniversario de la Facultad de Ingeniería.</p>
+						</article>
+					</section>
 				</div>
-			</div>		
-			
+
+			</div>
+
 			<div class="col-lg-4">
-				<aside data-th-replace="~{fragments/header::Aside}">
+				<aside class="list-group ">
+					<a href="#"
+						class="list-group-item list-group-item-action list-group-item-dark">
+						Biblioteca <img src="/images/Calendario.png" alt="Calendario"
+						width="%100">
+					</a> <a href="#"
+						class="list-group-item list-group-item-action list-group-item-dark">
+						Calendario académico <img src="/images/Biblioteca.png"
+						alt="Biblioteca" width="320">
+					</a>
 				</aside>
+
 			</div>
 		</div>
 	</div>
-	<footer data-th-replace="~{fragments/header::Footer}">
-	</footer>
+	<footer data-th-replace="~{fragments/footer::Footer}"> </footer>
 
-	<script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+	<script
+		data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 
 
