@@ -10,7 +10,7 @@ public class Materia {
 	private String cantidadHoras;
 	private Modalidad modalidad;
 	private Docente docente;
-	private String carrera;
+	private Carrera carrera;
 	private boolean estado;
 
 	public Materia() {
@@ -65,11 +65,11 @@ public class Materia {
 		this.docente = docente;
 	}
 
-	public String getCarrera() {
+	public Carrera getCarrera() {
 		return carrera;
 	}
 
-	public void setCarrera(String carrera) {
+	public void setCarrera(Carrera carrera) {
 		this.carrera = carrera;
 	}
 

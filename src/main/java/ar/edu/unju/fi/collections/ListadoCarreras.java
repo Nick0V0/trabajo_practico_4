@@ -5,7 +5,14 @@ import java.util.List;
 import ar.edu.unju.fi.model.Carrera;
 
 public class ListadoCarreras {
-	public static List<Carrera> carreras = new ArrayList<Carrera>();
+    @SuppressWarnings("serial")
+	public static List<Carrera> carreras = new ArrayList<Carrera>() {
+        {
+            add(new Carrera("1", "Ingeniería Informática", 5, true));
+            add(new Carrera("2", "Licenciatura en Administración", 4, true));
+            add(new Carrera("3", "Arquitectura", 6, true));
+        }
+    };
 
 	public static List<Carrera> listarCarreras() {
 		List<Carrera> aux = new ArrayList<Carrera>();

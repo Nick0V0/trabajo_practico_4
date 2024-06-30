@@ -71,6 +71,7 @@ public class AlumnoController {
 		ModelAndView modelView = new ModelAndView("listaDeAlumnos");
 		modelView.addObject("listadoAlumnos", ListadoAlumnos.listarAlumnos());
 
+		
 		return modelView;
 	}
 	

@@ -10,6 +10,7 @@ public class Carrera {
 	private Integer cantidadAnios;
 	private Boolean estado;
 
+	
 	public Carrera() {
 		// TODO Auto-generated constructor stub
 	}
