@@ -21,7 +21,7 @@
 			<div class="col-sm-6">
 				<label for="codigo" class="form-label">Código</label> <input
 					type="text" class="form-control" id="codigo"
-					data-th-field="*{codigo}" data-th-readonly="${band}" required>
+					data-th-field="*{codigo}" data-th-readonly="${band}" required>	
 			</div>
 
 			<div class="col-sm-6">
@@ -52,21 +52,23 @@
 			</div>
 
 			<div class="col-sm-6">
-				<select id="docente" data-th-field="*{docente.legajo}"
-					class="form-select">
+				<label class="form-label" for="docente">Docente</label> <select
+					class="form-select" id="docente" data-th-field="*{docente.legajo}"
+					required>
 					<option value="">Seleccionar Docente</option>
 					<option data-th-each="d:${listadoDocentes}"
-						data-th-value="${d.legajo}" data-th-text="${docente.apellido}"></option>
-				</select> <label class="form-label" for="docente">Docente</label>
+						data-th-value="${d.legajo}" data-th-text="${d.nombre}"></option>
+				</select>
 			</div>
 
 			<div class="col-sm-6">
-				<select id="carrera" data-th-field="*{carrera.codigo}"
-					class="form-select">
+				<label class="form-label" for="carrera">Carrera</label> <select
+					class="form-select" id="carrera" data-th-field="*{carrera.codigo}" 
+					required>
 					<option value="">Seleccionar Carrera</option>
 					<option data-th-each="c:${listadoCarreras}"
-						data-th-value="${c.codigo}" data-th-text="${carrera.nombre}"></option>
-				</select> <label class="form-label" for="carrera">Carrera</label>
+						data-th-value="${c.codigo}" data-th-text="${c.nombre}"></option>
+				</select>
 			</div>
 
 			<br>

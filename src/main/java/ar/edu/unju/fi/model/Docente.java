@@ -11,6 +11,17 @@ public class Docente {
 	private String telefono;
 	private Boolean estado;
 
+	
+	public Docente(String legajo, String nombre, String apellido, String email, String telefono, Boolean estado) {
+		super();
+		this.legajo = legajo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.telefono = telefono;
+		this.estado = estado;
+	}
+
 	public Docente() {
 		// TODO Auto-generated constructor stub
 	}
